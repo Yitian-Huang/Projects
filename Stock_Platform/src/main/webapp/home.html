@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="home.css">
+<script src="home.js"></script>
+<title>SalStock</title>
+</head>
+<body onload="f2()">
+	<ul>
+  		<li><a class="search" href="home.html"><strong>Sal Stocks</strong></a></li>
+		<li style="float:right"><a class="search" href="login.html">Login/Sign up</a></li>
+  		<li style="float:right"><a class="search"  href="home.html">Home/Search</a></li>
+	</ul>
+<div id ="home">
+	<br><br><br><br><br>
+	<h1 class="search" style="text-align:center; font-size:50px"><strong>SEARCH STOCKS</strong></h1>
+	<form action="javascript:void(0);" onsubmit="f1()">
+		<label for="ticker"></label><br>
+		<div style="text-align:center;">
+		<input type="text" id="ticker" name="ticker"  placeholder="Search by ticker..." 
+		style="font-size:27px;border:3px solid #855DFA;" required>
+		<input type="image" src="google-web-search-128.png" alt="Submit" style="width:40px;height:40px; vertical-align: top;">
+		</div>
+	</form>
+</div>
+
+<div id="title" style="text-align: center;font-family:calibri;  margin: auto; width:60%">
+	<p id="tick" style="font-size:25px;line-height:0.8;"></p>
+	<p id="inf"style="font-size:15px;line-height:1.8;"></p>
+	<p id="pr" style="line-height:1.8; "> </p>
+	<p id="cinf" style="font-size:25px;line-height:0.8; ">Company Information</p>
+	<p id="minf" style="line-height:1.8; text-align:left "> </p>
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

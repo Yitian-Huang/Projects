@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="home.css">
+<script src="login.js"></script>
+<title>SalStock</title>
+<style>
+input{
+	height:35px; width:320px; border:2px solid #111;border-radius:10px
+}
+input[type=submit]{
+	height:38px; width:330px; background-color:#781307;border-radius:10px;
+	color:white;
+}
+</style>
+</head>
+<body>
+	<ul>
+  		<li><a class="search" href="home.html"><strong>Sal Stocks</strong></a></li>
+		<li style="float:right"><a class="search" href="login.html">Login/Sign up</a></li>
+  		<li style="float:right"><a class="search"  href="home.html">Home/Search</a></li>
+	</ul>
+
+<div style=" width: 50%; float:left; ">
+
+	<form action="javascript:void(0);" onsubmit="f1()" style=" margin-left: 300px;margin-right: 80px; text-align:left;">
+		<h3 style=>Login</h3>
+		<label for="username-login" style="line-height:1.5;">Username:</label><br><br>
+		<input type="text" id="username-login" name="username" required><br><br>
+		
+		<label for="password-login" style="line-height:1.5;">Password:</label><br><br>
+		<input type="password" id="password-login" name="password" required><br><br>
+		
+		<input type="submit" value="submit" ><br><br><hr>
+	</form>
+</div>
+
+<div style=" width: 50%;float:right;">
+	<form style=" margin-left: 80px;margin-right: 300px; text-align:left;">
+		<h3 style=>Sign Up</h3>
+		<label for="email" style="line-height:1.5;">Email:</label><br><br>
+		<input type="email" id="email" name="email" required><br><br>
+		
+		<label for="username" style="line-height:1.5;">Username:</label><br><br>
+		<input type="text" id="username" name="username" required><br><br>
+		
+		<label for="password" style="line-height:1.5;">Password:</label><br><br>
+		<input type="password" id="passowrd" name="password" required><br><br>
+		
+		<label for="password-conf" style="line-height:1.5;">Confirmed Password:</label><br><br>
+		<input type="password" id="password-conf" name="password" required><br><br>
+		
+		<input type="submit" value="submit" ><br><br><hr>
+	</form>
+
+</div>
+
+</body>
+</html>

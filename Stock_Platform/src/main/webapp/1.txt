@@ -1,0 +1,38 @@
+https://finnhub.io/api/v1/stock/profile2?symbol=AAPL&token=cchtlhaad3i78i62jskg
+{
+	"country":"US",
+	"currency":"USD",
+	"exchange":"NASDAQ NMS - GLOBAL MARKET",
+	"finnhubIndustry":"Financial Services",
+	"ipo":"2021-04-14",
+	"logo":"https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/COIN.svg",
+	"marketCapitalization":10272.45745763763,
+	"name":"Coinbase Global Inc",
+	"phone":"13027770200.0",
+	"shareOutstanding":226.965152,
+	"ticker":"COIN",
+	"weburl":"https://www.coinbase.com/"
+}
+
+var xhttp = new XMLHttpRequest();
+	xhttp.responseType = 'json';
+	xhttp.onload = function() {
+		document.getElementById("home").style.display = "none";
+		document.getElementById("title").style.display = "block";
+		document.getElementById("tick").innerHTML = "ok";
+		document.getElementById("title").innerHTML = this.responseText;
+			
+		
+
+	};
+	xhttp.open("GET", "https://finnhub.io/api/v1/quote?symbol="+(document.getElementById("ticker").value) 
+			+"&token=cddn78qad3iag7bhsvp0cddn78qad3iag7bhsvpg", true);
+	xhttp.send();
+	
+	var x2http=new XMLHttpRequest();
+ 	x2http.onload = function(){
+	
+	};
+	x2http.open("GET", "https://finnhub.io/api/v1/quote?symbol="+(document.getElementById("ticker").value) 
+			+"&token=cddn78qad3iag7bhsvp0cddn78qad3iag7bhsvpg", true);
+	x2http.send();
